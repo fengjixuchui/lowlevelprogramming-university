@@ -1,6 +1,9 @@
-RNOTICE: Please notice that low-level programming is out of trend and currently there are not many companies hiring low-level developer. It is getting harder for me to find a job.
-If you does not start professional career yet, I would like to recommend you consider other fields carefully.
+NOTICE1: Please do not copy the contents of this page to your blog. You can share this page but please share with the original link. That is how we compliment the authors of good document and open source project.
 
+NOTICE2: Please notice that low-level programming is out of trend and currently there are not many companies hiring low-level developer. It is getting harder for me to find a job.
+If you haven't started a professional career yet, I would like to recommend you consider other fields either carefully.
+
+NOTICE3: If you want a quick start, go to "How to start?".
 
 * [Low-Level Programming University](#Low-Level-Programming-University)
   * [What is it?](#What-is-it)
@@ -9,6 +12,7 @@ If you does not start professional career yet, I would like to recommend you con
   *  [Languages](#Languages)
      * [Assembly](#Assembly)
      * [C language](#C-language)
+     * [Rust language](#Rust-language)
   * [Applications](#Applications)
     * [Hardware && Firmware](#Hardware-Firmware)
     * [Linux kernel and device driver](#Linux-kernel-and-device-driver)
@@ -99,7 +103,7 @@ There is no shortcut. Just read the entire book and solve all the exercises.
 
 * [C Programming: A Modern Approach, 2nd Edition](https://www.amazon.com/C-Programming-Modern-Approach-2nd/dp/0393979504)
 * [The C Programming Language 2nd Edition](https://www.amazon.com/Programming-Language-Brian-W-Kernighan/dp/0131103628/ref=pd_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=60R1D2CHBA8DHYT6JNMN)
-* [Modern C](http://icube-icps.unistra.fr/img_auth.php/d/db/ModernC.pdf)
+* Modern C: Jens Gustedt. Modern C. Manning, 2019, 9781617295812. ffhal-02383654f
   * For new standard of C
 * [Is Parallel Programming Hard, And, If So, What Can You Do About It?](https://www.kernel.org/pub/linux/kernel/people/paulmck/perfbook/perfbook.html)
   * raw implementation of synchronization with C
@@ -119,6 +123,24 @@ There is no shortcut. Just read the entire book and solve all the exercises.
   * Very basic programming tips for Linux kernel source reading
 
 If you want to be expert of C programming, visit https://leetcode.com/. Good luck!
+
+### <a name="Rust-language"></a>Rust language
+
+I am sure that the next language for the systems programming would be Rust.
+I will make a list what I did to learn Rust.
+
+* [The Rust Programming Language](https://doc.rust-lang.org/book/)
+  * Great introduction, but lack of examples and exercises.
+* [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
+  * While reading "The Rust Programming Language", you can find examples and exercises here.
+  * But there are not many exercises you can do something for yourself. Only some examples includes "do-this" exercises and they are very simple.
+* [Programming Rust, 2nd](https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/)
+  * Deeper introduction, but still lack of examples and exercises.
+* [Exercism](https://exercism.org/tracks/rust)
+  * Good exercises to practice indivisual features of RUST.
+  * I am not sure Mentors are working actively but it would be enough to compare your solution with others.
+    * After submitting your solution, you can see other's solutions with "Community solutions" tab (since Exercism V3).
+    * Many easy level exercises are for functional feature such as map/filter/any and etc.
 
 ## <a name="Applications"></a>Applications
 
@@ -210,6 +232,10 @@ Some resources for Linux kernel and device driver development from beginner to a
   * [md driver of Linux kernel(Korean)](https://github.com/gurugio/book_linuxkernel_md)
     * how mdadm tool works and how it calls md driver
     * how md driver works
+  * [A Heavily Commemted Linux Kernel Source Code](http://www.oldlinux.org/)
+    * Heavy comments for the ancient Linux v0.12.
+    * It would be good to start with old and simple OS.
+    * Unix version: [Lions' Commentary on UNIX 6th Edition, with Source Code](https://en.wikipedia.org/wiki/Lions%27_Commentary_on_UNIX_6th_Edition,_with_Source_Code)
 
 #### <a name="References"></a>References
 
@@ -235,11 +261,11 @@ I don't have any knowledge about those applications. Please send me any informat
 
 ## <a name="Future-of-low-level-programming"></a>Future of low-level programming
 
-I do not know the future, but I keep my eye on RUST.
+I do not know the future, but I keep my eye on Rust.
 * https://hacks.mozilla.org/2016/11/rust-and-the-future-of-systems-programming/
 
-If I could have one week free and alone, I would learn RUST.
-That is because RUST is the latest language with which I can develop Linux device drivers.
+If I could have one week free and alone, I would learn Rust.
+That is because Rust is the latest language with which I can develop Linux device drivers.
 * https://github.com/tsgates/rust.ko
 
 IoT is new trend, so it's worth to check what OSs are for IoT.
@@ -284,10 +310,18 @@ I received an email to ask how to start. There are many information about books,
   * If you want to be professional Linux Kernel Developer
     * must read [Understanding the Linux Kernel](https://www.amazon.com/Understanding-Linux-Kernel-Third-Daniel/dp/0596005652/ref=sr_1_1?ie=UTF8&qid=1483650712&sr=8-1&keywords=understanding+linux+kernel)
       * Then try to make a toy kernel
-      * [Learning operating system development using Linux kernel and Raspberry Pi](https://github.com/s-matyukevich/raspberry-pi-os)
+      * [Learn operating system development using Linux kernel and Raspberry Pi](https://github.com/s-matyukevich/raspberry-pi-os)
       * [Making your own kernel](http://wiki.osdev.org/Getting_Started)
+      * Write the github link to your kernel on your resume (Don't forget to write the detail description in commit message)
     * Check the latest issues at https://lwn.net/ and join it.
+      * Check "Recent kernel patches" at "https://lwn.net/Kernel/" or direct link https://lwn.net/Kernel/Patches
+      * Find an interesting patch to you. Try to understand the source code. Of course it would be really difficult but try. You will be closer and closer whenever you try.
+      * Build kernel and test it on your system. For example, performance test, stability test with LTP(https://linux-test-project.github.io/) or static code analysis tools inside of kernel.
+      * Report any problem if you find any: compile warnings/errors, performance drop, kernel panic/oops or any problem
+      * If it works well, report that with the spec of your system. The patch owner would write a "Reviewed-by" tag with your name.
+      * Find your name in kernel git log
   * Or find another topics
+    * There are many fields where the low-level engineer can work: security, Compiler, Firmware, robot/car and so on
 
 # <a name="Translation"></a>Translation
 
@@ -299,7 +333,8 @@ Please send me the pull request if you'd like to translate this page. I'll list 
 * [Italian](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_it.md)
 * [Czech](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_cz.md)
 * [Russian](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_ru.md)
-* [Turkish](https://github.com/masscollaborationlabs/lowlevelprogramming-university/blob/master/README_tr.md)
+* [Turkish](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_tr.md)
+* [Persian](https://github.com/gurugio/lowlevelprogramming-university/blob/master/README_fa.md)
 
 # <a name="who-am-i"></a>Who am I?
 
