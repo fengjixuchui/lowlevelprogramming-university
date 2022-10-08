@@ -67,6 +67,18 @@ Let me introduce several books that I've read. They are commonly used as textboo
   * Operating Systems: Internals and Design Principles by William Stallings
 * Recommended Courses
    * [CS401: Operating Systems from saylor.org](https://learn.saylor.org/course/view.php?id=94)
+* General Programming Skill
+   * [Structure and Interpretation of Computer Programs](https://en.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs)
+      * It's about how to be a good Software programmer. You need not only theory but only technique because programming is a kind of craftwork.
+      * If you learn Lisp/Scheme, you should be able to learn any other language quickly. 
+      * [I've solved about 80% exercises. It should be worth to try every single exercise.](https://github.com/gurugio/sicp_exercise)
+* Hardware Design
+   * Build Your Own 8086 Microprocessor Kit
+      * If you don't build your HW board, you don't understand what physical memory mapped device is.
+      * Modern APs includes so many IPs. So you don't have a chance to understand how CPU core and peripheral devices are connected.
+      * When you build your own 8086 kit, you have a chance to locate each peripheral devices on the physical memory. And you can set how the main HW components (BUS, IRQ, Clock, Power and etc) works with your own eyes.
+      * I built the 8086 kit in my University. It was one of the most valuable courses I've ever taken. Try to build your own HW kit. It would be better if the HW is older ans simpler because you should do more for yourself.
+      * Google "8086 kit". You would be able to find some web-sites you can buy a HW scheme, parts and manuals.
 
 There is an infinite list of good books. I don't want to say that you should read many books. Just read one book carefully. Whenever you learn a theory, implement simulation code of it. **Implementing one thing is better than knowing one hundred theories.**
 
@@ -129,6 +141,8 @@ If you want to be expert of C programming, visit https://leetcode.com/. Good luc
 I am sure that the next language for the systems programming would be Rust.
 I will make a list what I did to learn Rust.
 
+[Linus Torvalds said "Unless something odd happens, it [Rust] will make it into 6.1."](https://www.zdnet.com/article/linus-torvalds-rust-will-go-into-linux-6-1/)
+
 * [The Rust Programming Language](https://doc.rust-lang.org/book/)
   * Great introduction, but lack of examples and exercises.
 * [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
@@ -141,6 +155,14 @@ I will make a list what I did to learn Rust.
   * I am not sure Mentors are working actively but it would be enough to compare your solution with others.
     * After submitting your solution, you can see other's solutions with "Community solutions" tab (since Exercism V3).
     * Many easy level exercises are for functional feature such as map/filter/any and etc.
+* [Easy rust](https://dhghomon.github.io/easy_rust/)
+  * A book written in easy English.
+  * Youtube materials provided: https://www.youtube.com/playlist?list=PLfllocyHVgsRwLkTAhG0E-2QxCf-ozBkk
+* [Let's get rusty](https://www.youtube.com/c/LetsGetRusty)
+  * There are many Youtubers uploading Rust course but I enjoied this course most.
+  * He has been uploading the latest news for Rust. It's worth substribing.
+* [Rust for Linux](https://github.com/Rust-for-Linux)
+  * See the example sources and check how Rust will get into the Linux kernel
 
 ## <a name="Applications"></a>Applications
 
